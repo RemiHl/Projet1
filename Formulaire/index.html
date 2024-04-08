@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Acceuil/index.html">
+    <link rel="stylesheet" href="style.css">
+    <script src="./Formulaire/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Bebas Neue';
+        }
+    </style>
+    <title>BeatBench - Post</title>
+    </head>
+
+<body>
+    <header id="monHeader">
+        <div class="flex">
+            <h1>BeatBench</h1>
+            <a href="#song">Song</a>
+            <a href="#playlist">Playlist</a>
+            <a href="#search">Search</a>
+        </div>
+    </header>
+    <nav>
+        <div class="navG">
+            <a href="#genre">Genre</a>
+            <a href="#artiste">Artist</a>
+            <a href="#mood">Mood</a>
+        </div>
+    </nav>
+    <p>Commencez à partager ce que vous produisez ! <br> Post and Share !</p>
+
+    <form id="formulaire">
+        <label for="title">Titre :</label>
+        <input type="text" id="title" name="title" required>
+    
+        <label for="artist">Artiste :</label>
+        <input type="text" id="artist" name="artist" required>
+    
+        <label for="genre">Genre :</label>
+        <input type="text" id="genre" name="genre" required>
+    
+        <label for="audio">Fichier audio :</label>
+        <input type="file" id="audio" name="audio" accept="audio/*" required>
+    
+        <button type="submit">Soumettre</button>
+    </form>
+
+
+
+    <footer>
+        <p>Rémi Hlynski, 2024</p>
+        <div id="lien">
+            <p>n'hésitez pas à me contacter, que se soit pour un problème ou simplement pour dire bonjour,
+                je me ferais une joie de vous répondre !
+            </p>
+            <a class="liens" href="mailto:hlynski.r@gmail.com">Contact</a>
+        </div>
+    </footer>
+
+</body>
+</html>
