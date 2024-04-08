@@ -1,6 +1,6 @@
-<h1>What is BeatBench ?</h1>
+  <h1>What is BeatBench ?</h1>
 
-<p>BeatBench is a simple online platform for music creators to share their works with the community. 
+  <p>BeatBench is a simple online platform for music creators to share their works with the community. 
   Users can download, listen to and interact with submitted instrumentals.</p>
 
   <h2>Streaming listening :</h2> <p>Users can listen to available instrumentals made by other members directly on the site.</p>
