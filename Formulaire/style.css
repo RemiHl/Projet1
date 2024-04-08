@@ -7,35 +7,49 @@ body {
     background: linear-gradient(0.25turn, #FF2121, #FF9A62);
 }
 
-#monHeader h1 {
+#monHeader a h1 {
     font-size: 50px;
     color: #FF9A62;
-    margin-left: 15px;
+    max-width: 40%;
 }
 
 .flex {
     display: flex;
-    flex-direction: row;
-    text-align: center;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0px;
 }
 
-.flex a {
-    margin-left: 260px;
+.flex #links a {
     font-size: 20px;
-    margin-top: 18px;
     text-decoration: none;
     color: rgb(255, 194, 137);
+}
+
+.flex #links a:hover {
+    text-decoration: underline;
+}
+
+.navG a:hover {
+    text-decoration: underline;
 }
 
 #monHeader {
     border-bottom: 1px solid #FF9A62;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+
+#monHeader a {
+    text-decoration: none;
+}
+
+.navG {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
 }
 
 .navG a {
-    margin-left: 353px;
     text-decoration: none;
     color: rgb(255, 194, 137);
     font-size: 20px;
@@ -49,10 +63,6 @@ p {
     padding-right: 100px;
     padding-top: 50px;
     color: rgb(255, 194, 137);
-}
-
-a:hover {
-    text-decoration: underline;
 }
 
 footer p {
@@ -119,4 +129,16 @@ nav {
 #formulaire label {
     font-size: 20px;
     color:rgb(255, 194, 137);
+}
+
+.flex .titre h1 a {
+    margin-left: auto;
+    font-size: 50px;
+}
+
+div#links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
 }
