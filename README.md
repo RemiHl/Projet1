@@ -14,4 +14,6 @@
 
   <h3>Contribution</h3> <p>Contributions to improving BeatBench are welcome!</p>
 
+  <p>Work in progress...</p>
+
   <p>Created by Rémi Hlynski</p>
