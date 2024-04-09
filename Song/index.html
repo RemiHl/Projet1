@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Acceuil/index.html">
+    <link rel="stylesheet" href="../Formulaire/index.html">
     <link rel="stylesheet" href="style.css">
     <script src="./script.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -12,8 +13,8 @@
             font-family: 'Bebas Neue';
         }
     </style>
-    <title>BeatBench - Post</title>
-    </head>
+    <title>BeatBench - Song</title>
+</head>
 
 <body>
     <header id="monHeader">
@@ -33,25 +34,29 @@
             <a href="#mood">Mood</a>
         </div>
     </nav>
-    <p>Commencez à partager ce que vous produisez ! <br> Post and Share !</p>
+    <div id="songDetails">
+        <h1 id="songTitle"></h1>
+        <p id="songArtist"></p>
+        <p id="songGenre"></p>
+        <audio controls id="audioPlayer"><source src="/audio/Kik.mp3" type="audio/mp3"></audio>
+    </div>
+    <button id="deleteDataButton">Supprimer</button>
 
-    <form id="formulaire">
-        <label for="title">Titre :</label>
-        <input type="text" id="title" name="title" required>
-    
-        <label for="artist">Artiste :</label>
-        <input type="text" id="artist" name="artist" required>
-    
-        <label for="genre">Genre :</label>
-        <input type="text" id="genre" name="genre" required>
-    
-        <label for="audio">Fichier audio :</label>
-        <input type="file" id="audio" name="audio" accept=".mp3,.wav,.ogg" required>
-    
-        <button type="submit">Soumettre</button>
-    </form>
+    <script>
+        document.getElementById("deleteDataButton").addEventListener("click", function () {
+            localStorage.removeItem('songData');
+            localStorage.removeItem('audioFile');
+        });
+    </script>
 
+    <script>
+        var songData = JSON.parse(localStorage.getItem('songData'));
 
+        document.getElementById("songTitle").textContent = songData.title;
+        document.getElementById("songArtist").textContent = songData.artist;
+        document.getElementById("songGenre").textContent = songData.genre;
+        document.getElementById("audioPlayer").src = URL.createObjectURL(songData.audioFile);
+    </script>
 
     <footer>
         <p>Rémi Hlynski, 2024</p>
@@ -62,6 +67,7 @@
             <a class="liens" href="mailto:hlynski.r@gmail.com">Contact</a>
         </div>
     </footer>
+    
+    </body>
 
-</body>
 </html>

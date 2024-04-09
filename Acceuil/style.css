@@ -11,6 +11,12 @@ body {
     color: #FF9A62;
     max-width: 40%;
     margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+#monHeader a h1:hover {
+    transition: all 0.3s ease;
+    color: white;
 }
 
 .flex {
@@ -24,14 +30,20 @@ body {
     font-size: 20px;
     text-decoration: none;
     color: rgb(255, 194, 137);
+    transition: all 0.3s ease;
+    margin-left: -11px;
 }
 
 .flex #links a:hover {
     text-decoration: underline;
+    transition: all 0.3s ease;
+    color: white;
 }
 
 .navG a:hover {
     text-decoration: underline;
+    color: white;
+    transition: all 0.3s ease;
 }
 
 #monHeader {
