@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../Acceuil/index.html">
     <link rel="stylesheet" href="../Formulaire/index.html">
     <link rel="stylesheet" href="style.css">
-    <script src="./script.js" defer></script>
+    <script src="../Song/script.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <style>
         body {
@@ -34,30 +34,13 @@
             <a href="#mood">Mood</a>
         </div>
     </nav>
-    <div id="songDetails">
-        <h1 id="songTitle"></h1>
-        <p id="songArtist"></p>
-        <p id="songGenre"></p>
-        <audio controls id="audioPlayer"><source src="/audio/Kik.mp3" type="audio/mp3"></audio>
-    </div>
-    <button id="deleteDataButton">Supprimer</button>
 
-    <script>
-        document.getElementById("deleteDataButton").addEventListener("click", function () {
-            localStorage.removeItem('songData');
-            localStorage.removeItem('audioFile');
-        });
-    </script>
 
-    <script>
-        var songData = JSON.parse(localStorage.getItem('songData'));
+    <ul id="songList">
+        <!-- Les éléments de liste seront ajoutés ici -->
+    </ul>
 
-        document.getElementById("songTitle").textContent = songData.title;
-        document.getElementById("songArtist").textContent = songData.artist;
-        document.getElementById("songGenre").textContent = songData.genre;
-        document.getElementById("audioPlayer").src = URL.createObjectURL(songData.audioFile);
-    </script>
-
+    
     <footer>
         <p>Rémi Hlynski, 2024</p>
         <div id="lien">
@@ -67,7 +50,7 @@
             <a class="liens" href="mailto:hlynski.r@gmail.com">Contact</a>
         </div>
     </footer>
-    
+
     </body>
 
 </html>
