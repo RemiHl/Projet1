@@ -1,38 +1,25 @@
-// Récupérer les données du formulaire
-let titles = document.getElementById("title");
-let artist = document.getElementById("artist");
-let genre = document.getElementById("genre");
-let audioFile = document.getElementById("audio");
+document.addEventListener("DOMContentLoaded", function() {
+    // Récupère les données stockées localement
+    var songData = JSON.parse(localStorage.getItem('songData'));
 
-// Créer un nouvel élément liste
-let newItem = document.createElement("li");
-newItem.textContent = "Titre: " + titles + ", Artiste: " + artist + ", Genre: " + genre + ", Audio: " + audioFile;
+    // Affiche les données sur la page
+    if (songData) {
+        document.getElementById("title").textContent = songData.title;
+        document.getElementById("artist").textContent = songData.artist;
+        document.getElementById("genre").textContent = songData.genre;
+    }
 
-// Créer un lecteur audio
-var audioPlayer = document.createElement("audio");
-audioPlayer.controls = true; // Ajoute les contrôles du lecteur audio
+        //Evénements sur le bouton de suppression
+    var boutonSupprimer = document.getElementById("supprimerDonnees");
+    if (boutonSupprimer) {
+        boutonSupprimer.addEventListener("click", function() {
 
-// Créer une source audio avec le fichier audio
-var source = document.createElement("source");
-console.log(newItem)
-source.src = URL.createObjectURL(audioFile); // Utilise le fichier audio entré dans le formulaire
-source.type = "audio/mp3"; // Spécifie le type de fichier audio 
-
-// Ajouter la source audio au lecteur
-audioPlayer.appendChild(source);
-
-// Ajouter le lecteur audio à l'élément de liste
-newItem.appendChild(audioPlayer);
-
-// Créer un bouton de suppression
-let deleteButton = document.createElement("button");
-deleteButton.textContent = "Supprimer";
-deleteButton.addEventListener("click", function() {
-    newItem.remove(); // Supprimer l'élément de la liste lors du clic sur le bouton
+        // Supprime les données stockées localement
+        localStorage.removeItem('songData');
+        
+        // Efface les données affichées sur la page
+        document.getElementById("title").textContent = "";
+        document.getElementById("artist").textContent = "";
+        document.getElementById("genre").textContent = "";
     });
-
-// Ajouter le bouton de suppression à l'élément 
-newItem.appendChild(deleteButton);
-
-// Ajouter l'élément à la liste sur la page "Song"
-document.getElementById("songList").appendChild(newItem);
+}});
