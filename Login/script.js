@@ -18,6 +18,6 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
     }
 });
 
-// Login test (à remplacer par une vraie gestion côté serveur)
+// Login test (remplacer par une vraie gestion côté serveur)
 localStorage.setItem("username", "testuser");
 localStorage.setItem("password", "password123");
