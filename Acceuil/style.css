@@ -124,11 +124,12 @@ footer #lien a {
     list-style: none;
     color: rgb(255, 194, 137);
     font-size: 25px;
+    text-decoration: underline;
 }
 
 footer #lien {
     text-align: center;
-    margin-bottom: 50px
+    margin-bottom: 50px;
 }
 
 footer #lien p {
