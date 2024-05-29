@@ -1,7 +1,9 @@
+//Redirection du bouton "Begin"
 document.getElementsByClassName("commencer").onclick = function() {
     window.location.href = "../Formuaire/index.html";
 }
 
+//Effet de clignotement du titre
 function blink() {
     var title = document.getElementById('beatbench-title');
     title.classList.toggle('blink');
