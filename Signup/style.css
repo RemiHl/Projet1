@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(0.25turn, #FF2121, #FF9A62);
+}
+
+#monHeader a h1 {
+    font-size: 50px;
+    color: #FF9A62;
+    max-width: 40%;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+#monHeader a h1:hover {
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 0px;
+}
+
+.flex #links a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(255, 194, 137);
+    transition: all 0.3s ease;
+    margin-left: -11px;
+}
+
+.flex #links a:hover {
+    text-decoration: underline;
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.navG a:hover {
+    text-decoration: underline;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+#monHeader {
+    border-bottom: 1px solid #FF9A62;
+    display: flex;
+}
+
+#monHeader a {
+    text-decoration: none;
+}
+
+.navG {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.navG a {
+    text-decoration: none;
+    color: rgb(255, 194, 137);
+    font-size: 20px;
+    align-items: center;
+}
+
+p {
+    font-size: 40px;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    color: rgb(255, 194, 137);
+}
+
+.flex .titre h1 a {
+    margin-left: auto;
+    font-size: 50px;
+}
+
+div#links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+footer #lien a {
+    text-decoration: none;
+    list-style: none;
+    color: rgb(255, 194, 137);
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+footer #lien {
+    text-align: center;
+    margin-bottom: 20px
+}
+
+footer #lien p {
+    text-align: center;
+    font-size: 20px;
+}
+
+footer {
+    border-top: 1px solid #FF9A62;
+    margin-top: 150px;
+}
+/*base page*/
+
+.container {
+    background-color: linear-gradient(0.25turn, #ff2121, #ff9a62);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    width: 300px;
+    margin: auto;
+    max-width: 400px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    color: rgb(255, 194, 137);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: rgb(255, 194, 137);
+}
+
+input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
