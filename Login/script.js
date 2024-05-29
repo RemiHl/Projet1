@@ -1,12 +1,12 @@
 document.getElementById("loginForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
 
     // Validation de l'utilisateur avec localStorage
-    var storedUsername = localStorage.getItem("username");
-    var storedPassword = localStorage.getItem("password");
+    const storedUsername = localStorage.getItem("username");
+    const storedPassword = localStorage.getItem("password");
 
     if (username === storedUsername && password === storedPassword) {
         document.getElementById("message").textContent = "Connexion réussie!";
