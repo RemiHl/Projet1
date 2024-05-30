@@ -1,23 +1,35 @@
-document.getElementById("formulaire").addEventListener("submit", function(event) {
-    event.preventDefault(); 
+document.addEventListener('DOMContentLoaded', function () {
+    const form = document.getElementById('formulaire');
 
-    // Récupérer les valeurs des champs
-    let title = document.getElementById("title").value;
-    let artist = document.getElementById("artist").value;
-    let genre = document.getElementById("genre").value;
-    let audioFile = document.getElementById("audio").files[0];
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
 
-    // Stockage local
-    localStorage.setItem('songData', JSON.stringify({ title: title, artist: artist, genre: genre}));
+        const title = document.getElementById('title').value;
+        const artist = document.getElementById('artist').value;
+        const genre = document.getElementById('genre').value;
+        const audioInput = document.getElementById('audio');
 
-    // Stockage local fichier audio
-    let reader = new FileReader();
-    reader.onload = function(event) {
-        localStorage.setItem('audioFile', event.target.result);
-    };
-    reader.readAsDataURL(audioFile);
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            const audioData = e.target.result;
 
-    // Redirection des données
-    window.location.href = "../Song/index.html"; 
+            const song = {
+                title: title,
+                artist: artist,
+                genre: genre,
+                audio: audioData,
+                likes: 0
+            };
+
+            let songs = JSON.parse(localStorage.getItem('songs')) || [];
+            songs.push(song);
+            localStorage.setItem('songs', JSON.stringify(songs));
+
+            alert('Chanson ajoutée avec succès!');
+            form.reset();
+        };
+
+        reader.readAsDataURL(audioInput.files[0]);
+    });
 });
 

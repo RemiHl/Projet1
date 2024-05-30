@@ -122,20 +122,24 @@ p {
     color: rgb(255, 194, 137);
 }
 
-#songDetails #songTitle {
-    font-size: 50px;
-    color: #FF9A62;
+.likeButton .heart {
+    color: black;
 }
 
-#songDetails {
-    display:flex;
+.likeButton.liked .heart {
+    color: red;
+}
+
+.likeButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.song {
     justify-content: space-around;
     align-items: baseline;
     width: 100%;
-}
-
-#songDetails #songArtist, #songGenre {
-    font-size: 30px;
-    margin-top: 40px;
-    text-align: center;
+    display: flex;
 }

@@ -6,12 +6,12 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
 
     // Regex pour le mot de passe
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-
+    //Si ca ne correspond pas, message erreur
     if (!passwordRegex.test(password)) {
         alert('Le mot de passe doit contenir au moins 8 caractères, une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial.');
         return;
     }
-
+    //si ca correspond, message ok sinon erreur
     if (username && password) {
         const user = {
             username: username,
