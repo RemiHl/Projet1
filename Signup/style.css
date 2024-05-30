@@ -119,14 +119,12 @@ footer {
 /*base page*/
 
 .container {
-    background-color: linear-gradient(0.25turn, #ff2121, #ff9a62);
-    padding: 20px;
+    padding: 30px;
+    border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 7px;
-    width: 300px;
-    margin: auto;
     max-width: 400px;
     width: 100%;
+    margin: auto;
 }
 
 h2 {
