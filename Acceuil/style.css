@@ -167,3 +167,67 @@ div#links {
     50% { opacity: 0;}
     100% { opacity: 1;}
 }
+
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header #beatbench-title {
+        font-size: 24px;
+    }
+
+    header #links a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    nav .navG a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .videoCont video {
+        width: 70%;
+    }
+
+    p, .pourquoi p {
+        font-size: 24px;
+    }
+
+    .commencer {
+        max-width: 50px;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    header .flex {
+        align-items: center;
+    }
+
+    header #links a {
+        margin: 16px 0;
+    }
+
+    #links {
+        margin-left: -28px;
+    }
+
+    nav .navG {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    nav .navG a {
+        margin: 10px;
+    }
+}
