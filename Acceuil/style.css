@@ -34,6 +34,11 @@ body {
     margin-left: -11px;
 }
 
+#monHeader #links {
+    display: flex;
+    margin-left: 14px;
+}
+
 .flex #links a:hover {
     text-decoration: underline;
     transition: all 0.3s ease;
@@ -174,8 +179,11 @@ div#links {
         font-size: 14px;
     }
 
-    header #beatbench-title {
+    #monHeader #beatbench-title {
         font-size: 24px;
+        max-width: 40%;
+        margin-top: 3px;
+        margin-left: 5px;
     }
 
     header #links a {
@@ -217,8 +225,15 @@ div#links {
         margin: 16px 0;
     }
 
-    #links {
-        margin-left: -28px;
+    #monHeader #beatbench-title {
+        font-size: 38px;
+        max-width: 40%;
+        margin-top: 3px;
+        margin-left: 5px;
+    }
+
+    #monHeader #links {
+        margin-left: -26px;
     }
 
     nav .navG {
