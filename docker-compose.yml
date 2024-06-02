@@ -1,0 +1,10 @@
+version: '3' #version stable
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "7070:80" #Map le port 80 car Nginx par default est sur le 80
+    volumes:
+      - ./Site:/usr/share/nginx/html 
