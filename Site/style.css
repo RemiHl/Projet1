@@ -174,7 +174,7 @@ div#links {
 }
 
 
-@media (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 768px) {
     body {
         font-size: 14px;
     }
@@ -197,7 +197,7 @@ div#links {
     }
 
     .videoCont video {
-        width: 70%;
+        width: 50%;
     }
 
     p, .pourquoi p {
@@ -244,5 +244,14 @@ div#links {
 
     nav .navG a {
         margin: 10px;
+    }
+}
+
+@media (min-width: 1080px) {
+    #monHeader #beatbench-title {
+        font-size: 50px;
+        max-width: 40%;
+        margin-top: 3px;
+        margin-left: 5px;
     }
 }
