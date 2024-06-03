@@ -31,12 +31,6 @@ body {
     text-decoration: none;
     color: rgb(255, 194, 137);
     transition: all 0.3s ease;
-    margin-left: -11px;
-}
-
-#monHeader #links {
-    display: flex;
-    margin-left: 14px;
 }
 
 .flex #links a:hover {
@@ -156,7 +150,7 @@ footer {
     font-size: 50px;
 }
 
-div#links {
+div #links {
     display: flex;
     align-items: center;
     width: 100%;
@@ -175,19 +169,14 @@ div#links {
 
 
 @media (min-width: 480px) and (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
 
     #monHeader #beatbench-title {
         font-size: 24px;
         max-width: 40%;
-        margin-top: 3px;
-        margin-left: 5px;
+        margin: 4px;
     }
 
     #monHeader #links a {
-        /* display: block; */
         margin: 6px;
         font-size: 20px;
     }
@@ -198,7 +187,7 @@ div#links {
     }
 
     .videoCont video {
-        width: 50%;
+        width: 40%;
     }
 
     p, .pourquoi p {
@@ -222,15 +211,14 @@ div#links {
         align-items: center;
     }
 
-    header #links a {
+    #monHeader #links a {
         margin: 16px 0;
     }
 
     #monHeader #beatbench-title {
         font-size: 38px;
         max-width: 40%;
-        margin-top: 3px;
-        margin-left: 5px;
+        margin: 4px;
     }
 
     #monHeader #links {
@@ -252,7 +240,6 @@ div#links {
     #monHeader #beatbench-title {
         font-size: 50px;
         max-width: 40%;
-        margin-top: 3px;
-        margin-left: 5px;
+        margin: 4px;
     }
 }
