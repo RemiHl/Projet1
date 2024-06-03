@@ -23,7 +23,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
         alert('Inscription réussie ! Vous pouvez maintenant vous connecter.');
 
         // Redirige vers la page de connexion après l'inscription
-        window.location.href = '../Login/index.html'; 
+        window.location.href = './Login/index.html'; 
     } else {
         alert('Veuillez remplir tous les champs.');
     }
