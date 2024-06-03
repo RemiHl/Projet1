@@ -186,9 +186,10 @@ div#links {
         margin-left: 5px;
     }
 
-    header #links a {
-        display: block;
-        margin: 5px 0;
+    #monHeader #links a {
+        /* display: block; */
+        margin: 6px;
+        font-size: 20px;
     }
 
     nav .navG a {
