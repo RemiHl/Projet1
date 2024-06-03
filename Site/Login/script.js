@@ -33,7 +33,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     if (storedUser && storedUser.username === username && storedUser.password === password) {
         alert('Connexion réussie !');
         // Redirige vers la page d'accueil
-        window.location.href = '../Acceuil/index.html';
+        window.location.href = './Acceuil/index.html';
     } else {
         alert('Nom d\'utilisateur ou mot de passe incorrect.');
     }
