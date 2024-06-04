@@ -168,12 +168,16 @@ div #links {
 }
 
 
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 360px) and (max-width: 768px) {
 
     #monHeader #beatbench-title {
         font-size: 24px;
         max-width: 40%;
         margin: 4px;
+    }
+
+    h2 {
+        font-size: 30px;
     }
 
     #monHeader #links a {
@@ -199,14 +203,11 @@ div #links {
         text-align: center;
         align-items: center;
         width: 100%;
+        padding: auto;
     }
 }
 
 @media (min-width: 768px) {
-    body {
-        font-size: 16px;
-    }
-
     header .flex {
         align-items: center;
     }
