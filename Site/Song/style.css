@@ -143,3 +143,13 @@ p {
     width: 100%;
     display: flex;
 }
+
+.song h1 {
+    color: rgb(255, 194, 137);
+    font-size: 46px;
+    text-decoration: underline;
+}
+
+.song .likeCount {
+    margin: 20px;
+}

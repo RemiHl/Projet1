@@ -27,6 +27,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             alert('Chanson ajoutée avec succès!');
             form.reset();
+
+            window.location.href = '../Song/index.html';
         };
 
         reader.readAsDataURL(audioInput.files[0]);
